@@ -11,3 +11,5 @@ def func_outer():
     print("Локальное  х сменилось на: ", x)
 
 func_outer()
+
+print(x)
