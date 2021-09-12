@@ -1,12 +1,13 @@
 x = 50
 
-def priX():
-    global x
-    print("Значение x равно: ", x)
-    x = 15
-    print("Заменили глобальное значение на: ", x)
+def func_outer():
+    x = 2
+    print("х равен: ", x)
 
+    def func_inner():
+        nonlocal x
+        x = 5
+    func_inner()
+    print("Локальное  х сменилось на: ", x)
 
-priX()
-
-print(x)
+func_outer()
