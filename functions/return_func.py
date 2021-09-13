@@ -1,4 +1,4 @@
-def maximum(x, y):
+def maximum(x, y): #есть уже готовая функция (max)
     if x > y:
         return x
     elif x == y:
